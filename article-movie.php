@@ -1,5 +1,6 @@
 <?php 	 
-   include 'headerArticle.php';
+   include 'header.php';
+   include 'slider.php';
    ?>
 <body>
    <div class="container">
