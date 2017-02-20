@@ -5,6 +5,8 @@ PLugin Name: PluginDB
 
 session_start();
 
+
+
 $dir = "exception";
 $files = glob(dirname(__FILE__)."/".$dir."/*.php");
 
@@ -32,3 +34,18 @@ function _pluginDB_ajout(){
 function _pluginDB_type(){
    include "views/type.php";
 }
+
+
+
+function get_element_by_type() {
+	global $wpdb; // this is how you get access to the database
+
+	$whatever = $_POST['type'];
+	$pluginDB = new PluginDB();
+
+       echo json_encode($pluginDB->getElementsByType($whatever));
+
+	wp_die(); // this is required to terminate immediately and return a proper response
+}
+
+ add_action( 'wp_ajax_get_element_by_type', 'get_element_by_type' );

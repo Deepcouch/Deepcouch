@@ -44,11 +44,19 @@ class PluginDB {
 	}
 
 	public function getElementsByType($slug){
-		var_dump($slug);
-		$slugInfo = $this->slugChecker($checker)[0];
-		$elements = $this->wpdb->get_results("SELECT * FROM elements WHERE type = ".$slugInfo->id);
+		
+		$slugInfo = $this->slugChecker($slug)[0];
 
+		$elements = $this->wpdb->get_results("SELECT 
+elements.id AS elem_id,
+elements_meta.id AS meta_id,
+elements.type AS elem_type_id,
+elements_meta.meta_key AS meta_key,
+elements_meta.meta_value AS meta_value
+FROM elements LEFT JOIN elements_meta ON elements.id = elements_meta.element_id WHERE type = ".$slugInfo->id);
+		return $elements;
 	}
+
 	private function checkTypeForm(){
 		if(is_admin()){
 			if(isset($_POST['type_form'])){
@@ -87,7 +95,7 @@ class PluginDB {
 
 	private function checkAddForm(){
 		if(is_admin()){
-			var_dump($_POST);
+			//var_dump($_POST);
 			// var_dump($_FILES);
 
 			do_action("pdb_before_checking_add_form");
