@@ -17,4 +17,10 @@
 	.elements-part.hidden{
 		display: none;
 	}
+	.custom-dropdown{
+
+	}
+	.custom-dropdown li p{
+		text-align: center;
+	}
 </style>

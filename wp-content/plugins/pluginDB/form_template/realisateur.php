@@ -77,7 +77,7 @@
     	}
     });
 
-    jQuery("#autocomplete-input").change(function(){
+    jQuery("#autocomplete-input").focus(function(){
     	jQuery(document).ready(function($) {
 
 		var data = {
@@ -87,7 +87,44 @@
 
 		// since 2.8 ajaxurl is always defined in the admin header and points to admin-ajax.php
 		jQuery.post(ajaxurl, data, function(response) {
-			console.log(response);
+			var parsedResponse = JSON.parse(response);
+			console.log(parsedResponse);
+			var transition = [];
+			var final = new Array();
+			parsedResponse.forEach(function (elem){
+				if(elem.meta_id != null && elem.meta_key != null && elem.meta_value !== null){
+					if( typeof(transition[elem.elem_id]) == "undefined"){
+						transition[elem.elem_id] = {};
+						transition[elem.elem_id].id = elem.elem_id;
+					}
+
+					if( typeof(transition[elem.elem_id]["meta_id"]) == "undefined"){
+						transition[elem.elem_id]["meta_id"] = elem.meta_id;
+					}
+
+					transition[elem.elem_id][elem.meta_key] = elem.meta_value;
+					final = transition.filter(function(elem){ return elem != undefined}).join();
+				}
+			});
+			var position = document.querySelector("#autocomplete-input").getBoundingClientRect();
+			var domElem = document.createElement("ul");
+			domElem.classList.add("custom_dropdown");
+			domElem.style.position ="absolute";
+			domElem.style.top = (position.top + position.height) +"px";
+			domElem.style.left = (position.left) +"px";
+			domElem.style.width = (position.width) +"px";
+			domElem.style.minHeight = (position.width) +"px";
+			domElem.style.background="#fff";
+			console.log(transition);
+			transition.forEach(function(elem){
+				var li = document.createElement('li');
+				var p = document.createElement('p');
+				p.innerHTML = elem.acteur_firstname +" "+elem.acteur_lastname;
+
+				li.appendChild(p);
+				domElem.appendChild(li);
+			});
+			document.body.appendChild(domElem);
 		});
 	});
     });
