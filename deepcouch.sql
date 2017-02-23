@@ -128,6 +128,9 @@ INSERT INTO `elements_meta` (`id`, `element_id`, `meta_key`, `meta_value`) VALUE
 (2, 34, 'acteur_lastname', 'jean'),
 (3, 34, 'acteur_birthday', '739931332'),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> single
 (4, 34, 'acteur_file', 'http://localhost/deepcouch/wp-content/uploads'),
 (5, 35, 'acteur_firstname', 'dujardin'),
 (6, 35, 'acteur_lastname', 'jeand'),
@@ -181,6 +184,7 @@ INSERT INTO `elements_meta` (`id`, `element_id`, `meta_key`, `meta_value`) VALUE
 (54, 50, 'realisateur_lastname', ''),
 (55, 50, 'realisateur_birthday', ''),
 (56, 50, 'realisateur_file', 'http://localhost/deepcouch/wp-content/uploads/elements/50/');
+<<<<<<< HEAD
 =======
 (4, 34, 'acteur_file', 'http://localhost/_school/semestre_1/wordpress/deepcouch/wp-content/uploads'),
 (5, 35, 'acteur_firstname', 'dujardin'),
@@ -236,6 +240,8 @@ INSERT INTO `elements_meta` (`id`, `element_id`, `meta_key`, `meta_value`) VALUE
 (55, 50, 'realisateur_birthday', ''),
 (56, 50, 'realisateur_file', 'http://localhost/_school/semestre_1/wordpress/deepcouch/wp-content/uploads/elements/50/');
 >>>>>>> homePage
+=======
+>>>>>>> single
 
 -- --------------------------------------------------------
 
@@ -345,12 +351,17 @@ CREATE TABLE `wp_options` (
 
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
 <<<<<<< HEAD
+<<<<<<< HEAD
 (1, 'siteurl', 'http://localhost/deepcouch', 'yes'),
 (2, 'home', 'http://localhost/deepcouch', 'yes'),
 =======
 (1, 'siteurl', 'http://localhost/_school/semestre_1/wordpress/deepcouch', 'yes'),
 (2, 'home', 'http://localhost/_school/semestre_1/wordpress/deepcouch', 'yes'),
 >>>>>>> homePage
+=======
+(1, 'siteurl', 'http://localhost/deepcouch', 'yes'),
+(2, 'home', 'http://localhost/deepcouch', 'yes'),
+>>>>>>> single
 (3, 'blogname', 'Deepcouch', 'yes'),
 (4, 'blogdescription', 'Un site utilisant WordPress', 'yes'),
 (5, 'users_can_register', '0', 'yes'),
@@ -544,6 +555,7 @@ CREATE TABLE `wp_posts` (
 
 INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
 <<<<<<< HEAD
+<<<<<<< HEAD
 (1, 1, '2017-02-14 15:31:08', '2017-02-14 14:31:08', 'Bienvenue dans WordPress. Ceci est votre premier article. Modifiez-le ou supprimez-le, puis lancez-vous&nbsp;!', 'Bonjour tout le monde&nbsp;!', '', 'publish', 'open', 'open', '', 'bonjour-tout-le-monde', '', '', '2017-02-14 15:31:08', '2017-02-14 14:31:08', '', 0, 'http://localhost/deepcouch/?p=1', 0, 'post', '', 1),
 (2, 1, '2017-02-14 15:31:08', '2017-02-14 14:31:08', 'Voici un exemple de page. Elle est différente d’un article de blog, en cela qu’elle restera à la même place, et s’affichera dans le menu de navigation de votre site (en fonction de votre thème). La plupart des gens commencent par écrire une page « À Propos » qui les présente aux visiteurs potentiels du site. Vous pourriez y écrire quelque chose de ce tenant :\n\n<blockquote>Bonjour ! Je suis un mécanicien qui aspire à devenir un acteur, et voici mon blog. J’habite à Bordeaux, j’ai un super chien baptisé Russell, et j’aime la vodka-ananas (ainsi que regarder la pluie tomber).</blockquote>\n\n...ou bien quelque chose comme ça :\n\n<blockquote>La société 123 Machin Truc a été créée en 1971, et n’a cessé de proposer au public des machins-trucs de qualité depuis lors. Située à Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson, 123 Machin Truc emploie 2 000 personnes, et fabrique toutes sortes de bidules super pour la communauté bouzemontoise.</blockquote>\n\nÉtant donné que vous êtes un nouvel utilisateur de WordPress, vous devriez vous rendre sur votre <a href="http://localhost/deepcouch/wp-admin/">Tableau de bord</a> pour effacer la présente page, et créer de nouvelles pages avec votre propre contenu. Amusez-vous bien !', 'Page d&rsquo;exemple', '', 'publish', 'closed', 'open', '', 'page-d-exemple', '', '', '2017-02-14 15:31:08', '2017-02-14 14:31:08', '', 0, 'http://localhost/deepcouch/?page_id=2', 0, 'page', '', 0),
 (3, 1, '2017-02-14 15:31:30', '0000-00-00 00:00:00', '', 'Brouillon auto', '', 'auto-draft', 'open', 'open', '', '', '', '', '2017-02-14 15:31:30', '0000-00-00 00:00:00', '', 0, 'http://localhost/deepcouch/?p=3', 0, 'post', '', 0);
@@ -552,6 +564,11 @@ INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post
 (2, 1, '2017-02-14 15:31:08', '2017-02-14 14:31:08', 'Voici un exemple de page. Elle est différente d’un article de blog, en cela qu’elle restera à la même place, et s’affichera dans le menu de navigation de votre site (en fonction de votre thème). La plupart des gens commencent par écrire une page « À Propos » qui les présente aux visiteurs potentiels du site. Vous pourriez y écrire quelque chose de ce tenant :\n\n<blockquote>Bonjour ! Je suis un mécanicien qui aspire à devenir un acteur, et voici mon blog. J’habite à Bordeaux, j’ai un super chien baptisé Russell, et j’aime la vodka-ananas (ainsi que regarder la pluie tomber).</blockquote>\n\n...ou bien quelque chose comme ça :\n\n<blockquote>La société 123 Machin Truc a été créée en 1971, et n’a cessé de proposer au public des machins-trucs de qualité depuis lors. Située à Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson, 123 Machin Truc emploie 2 000 personnes, et fabrique toutes sortes de bidules super pour la communauté bouzemontoise.</blockquote>\n\nÉtant donné que vous êtes un nouvel utilisateur de WordPress, vous devriez vous rendre sur votre <a href="http://localhost/_school/semestre_1/wordpress/deepcouch/wp-admin/">Tableau de bord</a> pour effacer la présente page, et créer de nouvelles pages avec votre propre contenu. Amusez-vous bien !', 'Page d&rsquo;exemple', '', 'publish', 'closed', 'open', '', 'page-d-exemple', '', '', '2017-02-14 15:31:08', '2017-02-14 14:31:08', '', 0, 'http://localhost/_school/semestre_1/wordpress/deepcouch/?page_id=2', 0, 'page', '', 0),
 (3, 1, '2017-02-14 15:31:30', '0000-00-00 00:00:00', '', 'Brouillon auto', '', 'auto-draft', 'open', 'open', '', '', '', '', '2017-02-14 15:31:30', '0000-00-00 00:00:00', '', 0, 'http://localhost/_school/semestre_1/wordpress/deepcouch/?p=3', 0, 'post', '', 0);
 >>>>>>> homePage
+=======
+(1, 1, '2017-02-14 15:31:08', '2017-02-14 14:31:08', 'Bienvenue dans WordPress. Ceci est votre premier article. Modifiez-le ou supprimez-le, puis lancez-vous&nbsp;!', 'Bonjour tout le monde&nbsp;!', '', 'publish', 'open', 'open', '', 'bonjour-tout-le-monde', '', '', '2017-02-14 15:31:08', '2017-02-14 14:31:08', '', 0, 'http://localhost/deepcouch/?p=1', 0, 'post', '', 1),
+(2, 1, '2017-02-14 15:31:08', '2017-02-14 14:31:08', 'Voici un exemple de page. Elle est différente d’un article de blog, en cela qu’elle restera à la même place, et s’affichera dans le menu de navigation de votre site (en fonction de votre thème). La plupart des gens commencent par écrire une page « À Propos » qui les présente aux visiteurs potentiels du site. Vous pourriez y écrire quelque chose de ce tenant :\n\n<blockquote>Bonjour ! Je suis un mécanicien qui aspire à devenir un acteur, et voici mon blog. J’habite à Bordeaux, j’ai un super chien baptisé Russell, et j’aime la vodka-ananas (ainsi que regarder la pluie tomber).</blockquote>\n\n...ou bien quelque chose comme ça :\n\n<blockquote>La société 123 Machin Truc a été créée en 1971, et n’a cessé de proposer au public des machins-trucs de qualité depuis lors. Située à Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson, 123 Machin Truc emploie 2 000 personnes, et fabrique toutes sortes de bidules super pour la communauté bouzemontoise.</blockquote>\n\nÉtant donné que vous êtes un nouvel utilisateur de WordPress, vous devriez vous rendre sur votre <a href="http://localhost/deepcouch/wp-admin/">Tableau de bord</a> pour effacer la présente page, et créer de nouvelles pages avec votre propre contenu. Amusez-vous bien !', 'Page d&rsquo;exemple', '', 'publish', 'closed', 'open', '', 'page-d-exemple', '', '', '2017-02-14 15:31:08', '2017-02-14 14:31:08', '', 0, 'http://localhost/deepcouch/?page_id=2', 0, 'page', '', 0),
+(3, 1, '2017-02-14 15:31:30', '0000-00-00 00:00:00', '', 'Brouillon auto', '', 'auto-draft', 'open', 'open', '', '', '', '', '2017-02-14 15:31:30', '0000-00-00 00:00:00', '', 0, 'http://localhost/deepcouch/?p=3', 0, 'post', '', 0);
+>>>>>>> single
 
 -- --------------------------------------------------------
 
