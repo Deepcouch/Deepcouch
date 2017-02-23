@@ -8,3 +8,23 @@ nav ul li a:hover, nav ul li a:focus, nav ul li a i:hover, nav ul li a i:focus{
 .slider .indicators .indicator-item.active {
     background-color: #ffc107;
 }
+.color-hov {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+    position: inherit !important;
+    opacity: 1 !important;
+}
+input.button {
+    border: none !important;
+    border-radius: 2px !important;
+    display: inline-block !important;
+    height: 36px !important;
+    line-height: 36px !important;
+    padding: 0 2rem !important;
+    text-transform: uppercase !important;
+    vertical-align: middle !important;
+    -webkit-tap-highlight-color: transparent !important;
+    color: #fff;
+    background-color: #ff9800 !important;
+}

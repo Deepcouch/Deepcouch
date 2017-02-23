@@ -16,7 +16,7 @@
 <body class="grey lighten-4">
     <header class="navbar-fixed">
         <nav class="nav-wrapper">
-            <a href="#" class="brand-logo"><img src="<?php echo bloginfo('stylesheet_directory').'/statics/img/couch.svg';?>" alt=""></a>
+            <a href="<?php bloginfo('url'); ?>" class="brand-logo"><img src="<?php echo bloginfo('stylesheet_directory').'/statics/img/couch.svg';?>" alt=""></a>
             <ul class="right hide-on-med-and-down orange-texte">
                 <li><a href="films.html">Films</a></li>
                 <li><a href="series.html">Séries</a></li>
@@ -53,20 +53,7 @@
     <div id="signin" class="modal modal-fixed-footer">
         <div class="modal-content">
             <h4>Se connecter</h4>
-            <form action="" method="post">
-                <div class="input-field s12">
-                    <label for="email">Email</label>
-                    <input type="email" id="email">
-                </div>
-                <div class="input-field s12">
-                    <label for="password">Mot de passe</label>
-                    <input type="password" id="password">
-                </div>
-            </form>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-black btn-flat left">Créer un compte</a>
-            <a href="#!" class="modal-action modal-close waves-effect waves-black btn-flat right">Se connecter</a>
+            <?php wp_login_form(); ?>
         </div>
     </div>
 <script type="text/javascript">
