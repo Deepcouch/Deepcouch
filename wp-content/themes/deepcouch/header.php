@@ -11,6 +11,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="<?php echo bloginfo('stylesheet_directory').'/statics/js/materialize.min.js'; ?>" charset="utf-8"></script>
     <script src="<?php echo bloginfo('stylesheet_directory').'/statics/js/script.js';?>" charset="utf-8"></script>
+    <?php wp_head(); ?>
 </head>
 <body class="grey lighten-4">
     <header class="navbar-fixed">

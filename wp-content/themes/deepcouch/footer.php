@@ -27,4 +27,5 @@
             <a class="grey-text text-lighten-4 right" href="https://github.com/Deepcouch/deepcouch"><img src="<?php echo bloginfo('stylesheet_directory').'/statics/img/github-logo.svg';?>" alt=""></a>
         </div>
     </div>
+    <?php wp_footer(); ?>
 </footer>
