@@ -95,7 +95,7 @@ FROM elements LEFT JOIN elements_meta ON elements.id = elements_meta.element_id 
 
 	private function checkAddForm(){
 		if(is_admin()){
-			//var_dump($_POST);
+			var_dump($_POST);
 			// var_dump($_FILES);
 
 			do_action("pdb_before_checking_add_form");
@@ -121,7 +121,7 @@ FROM elements LEFT JOIN elements_meta ON elements.id = elements_meta.element_id 
 								$elem = trim(strtolower($_POST[$slugInfo->type_slug."_".$key]));
 								$this->toInsert[$slugInfo->type_slug."_".$key] = $elem;
 								break;
-							case "%a"
+							case "%a":
 								foreach ($_POST[$slugInfo->type_slug."_".$key] as $clef => $valeur) {
 									$this->toInsert[$slugInfo->type_slug."_".str_replace("[]", "", $key)];
 								}
