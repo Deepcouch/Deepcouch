@@ -123,8 +123,9 @@ FROM elements LEFT JOIN elements_meta ON elements.id = elements_meta.element_id 
 								break;
 							case "%a":
 								foreach ($_POST[$slugInfo->type_slug."_".$key] as $clef => $valeur) {
-									$this->toInsert[$slugInfo->type_slug."_".str_replace("[]", "", $key)];
+									$this->toInsert[$slugInfo->type_slug."_".str_replace("[]", "", $key)] = $valeur;
 								}
+								break;
 						}
 					}
 

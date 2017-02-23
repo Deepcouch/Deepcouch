@@ -7,6 +7,7 @@
 			    <label>
 			      Non
 			      <input type="checkbox" name="realisateur_is_acteur" class="realisateur_is_acteur">
+			      <input type="hidden" name="realisateur_acteur_id" class="realisateur_acteur_id">
 			      <span class="lever"></span>
 			      Oui
 			    </label>
@@ -66,6 +67,7 @@
     selectYears: 100, // Creates a dropdown of 15 years to control year
     format: 'dd-mm-yyyy'
   });
+
     jQuery(".realisateur_is_acteur").change(function(){
     	
     	if(jQuery(this)[0].checked){
@@ -76,7 +78,9 @@
     		jQuery(".switch_on")[0].style.display = "none";
     	}
     });
-
+    // jQuery("#autocomplete-input").focusout(function(){
+    // 	jQuery(".custom_dropdown").remove();
+    // });
     jQuery("#autocomplete-input").focus(function(){
     	jQuery(document).ready(function($) {
 
@@ -88,7 +92,6 @@
 		// since 2.8 ajaxurl is always defined in the admin header and points to admin-ajax.php
 		jQuery.post(ajaxurl, data, function(response) {
 			var parsedResponse = JSON.parse(response);
-			console.log(parsedResponse);
 			var transition = [];
 			var final = new Array();
 			parsedResponse.forEach(function (elem){
@@ -115,11 +118,21 @@
 			domElem.style.width = (position.width) +"px";
 			domElem.style.minHeight = (position.width) +"px";
 			domElem.style.background="#fff";
-			console.log(transition);
 			transition.forEach(function(elem){
 				var li = document.createElement('li');
 				var p = document.createElement('p');
 				p.innerHTML = elem.acteur_firstname +" "+elem.acteur_lastname;
+				p.dataset.id = elem.id;
+
+				p.addEventListener("click", function(e){
+					console.log(e.target);
+					jQuery(".realisateur_is_acteur")[0].value = e.target.innerHTML;
+					jQuery("#autocomplete-input")[0].value = e.target.innerHTML;
+					jQuery(".realisateur_acteur_id")[0].value = e.target.dataset.id;
+					jQuery(".custom_dropdown").remove();
+
+
+				});
 
 				li.appendChild(p);
 				domElem.appendChild(li);
