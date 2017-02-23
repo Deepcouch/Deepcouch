@@ -1,0 +1,10 @@
+.nav-wrapper, .color-footer {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+nav ul li a:hover, nav ul li a:focus, nav ul li a i:hover, nav ul li a i:focus{
+    color: #ffc107 !important;
+}
+
+.slider .indicators .indicator-item.active {
+    background-color: #ffc107;
+}

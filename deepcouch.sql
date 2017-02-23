@@ -127,6 +127,7 @@ INSERT INTO `elements_meta` (`id`, `element_id`, `meta_key`, `meta_value`) VALUE
 (1, 34, 'acteur_firstname', 'dujardin'),
 (2, 34, 'acteur_lastname', 'jean'),
 (3, 34, 'acteur_birthday', '739931332'),
+<<<<<<< HEAD
 (4, 34, 'acteur_file', 'http://localhost/deepcouch/wp-content/uploads'),
 (5, 35, 'acteur_firstname', 'dujardin'),
 (6, 35, 'acteur_lastname', 'jeand'),
@@ -180,6 +181,61 @@ INSERT INTO `elements_meta` (`id`, `element_id`, `meta_key`, `meta_value`) VALUE
 (54, 50, 'realisateur_lastname', ''),
 (55, 50, 'realisateur_birthday', ''),
 (56, 50, 'realisateur_file', 'http://localhost/deepcouch/wp-content/uploads/elements/50/');
+=======
+(4, 34, 'acteur_file', 'http://localhost/_school/semestre_1/wordpress/deepcouch/wp-content/uploads'),
+(5, 35, 'acteur_firstname', 'dujardin'),
+(6, 35, 'acteur_lastname', 'jeand'),
+(7, 35, 'acteur_birthday', '739931658'),
+(8, 35, 'acteur_file', 'http://localhost/_school/semestre_1/wordpress/deepcouch/wp-content/uploads/elements/35/rs_634x1024-151105133417-634.Jean-Dujardin-Silver-Fox.jl.110515.jpg'),
+(9, 39, 'realisateur_firstname', ''),
+(10, 39, 'realisateur_lastname', ''),
+(11, 39, 'realisateur_birthday', ''),
+(12, 39, 'realisateur_file', 'http://localhost/_school/semestre_1/wordpress/deepcouch/wp-content/uploads/elements/39/'),
+(13, 40, 'realisateur_firstname', ''),
+(14, 40, 'realisateur_lastname', ''),
+(15, 40, 'realisateur_birthday', ''),
+(16, 40, 'realisateur_file', 'http://localhost/_school/semestre_1/wordpress/deepcouch/wp-content/uploads/elements/40/'),
+(17, 41, 'realisateur_firstname', ''),
+(18, 41, 'realisateur_lastname', 'test'),
+(19, 41, 'realisateur_birthday', ''),
+(20, 41, 'realisateur_file', 'http://localhost/_school/semestre_1/wordpress/deepcouch/wp-content/uploads/elements/41/'),
+(21, 42, 'realisateur_firstname', ''),
+(22, 42, 'realisateur_lastname', ''),
+(23, 42, 'realisateur_birthday', ''),
+(24, 42, 'realisateur_file', 'http://localhost/_school/semestre_1/wordpress/deepcouch/wp-content/uploads/elements/42/'),
+(25, 43, 'realisateur_firstname', ''),
+(26, 43, 'realisateur_lastname', ''),
+(27, 43, 'realisateur_birthday', ''),
+(28, 43, 'realisateur_file', 'http://localhost/_school/semestre_1/wordpress/deepcouch/wp-content/uploads/elements/43/'),
+(29, 44, 'realisateur_firstname', ''),
+(30, 44, 'realisateur_lastname', ''),
+(31, 44, 'realisateur_birthday', ''),
+(32, 44, 'realisateur_file', 'http://localhost/_school/semestre_1/wordpress/deepcouch/wp-content/uploads/elements/44/'),
+(33, 45, 'realisateur_firstname', ''),
+(34, 45, 'realisateur_lastname', ''),
+(35, 45, 'realisateur_birthday', ''),
+(36, 45, 'realisateur_file', 'http://localhost/_school/semestre_1/wordpress/deepcouch/wp-content/uploads/elements/45/'),
+(37, 46, 'realisateur_firstname', ''),
+(38, 46, 'realisateur_lastname', 'venant'),
+(39, 46, 'realisateur_birthday', ''),
+(40, 46, 'realisateur_file', 'http://localhost/_school/semestre_1/wordpress/deepcouch/wp-content/uploads/elements/46/'),
+(41, 47, 'realisateur_firstname', ''),
+(42, 47, 'realisateur_lastname', ''),
+(43, 47, 'realisateur_birthday', ''),
+(44, 47, 'realisateur_file', 'http://localhost/_school/semestre_1/wordpress/deepcouch/wp-content/uploads/elements/47/'),
+(45, 48, 'realisateur_firstname', ''),
+(46, 48, 'realisateur_lastname', ''),
+(47, 48, 'realisateur_birthday', ''),
+(48, 48, 'realisateur_file', 'http://localhost/_school/semestre_1/wordpress/deepcouch/wp-content/uploads/elements/48/'),
+(49, 49, 'realisateur_firstname', ''),
+(50, 49, 'realisateur_lastname', ''),
+(51, 49, 'realisateur_birthday', ''),
+(52, 49, 'realisateur_file', 'http://localhost/_school/semestre_1/wordpress/deepcouch/wp-content/uploads/elements/49/'),
+(53, 50, 'realisateur_firstname', ''),
+(54, 50, 'realisateur_lastname', ''),
+(55, 50, 'realisateur_birthday', ''),
+(56, 50, 'realisateur_file', 'http://localhost/_school/semestre_1/wordpress/deepcouch/wp-content/uploads/elements/50/');
+>>>>>>> homePage
 
 -- --------------------------------------------------------
 
@@ -288,8 +344,13 @@ CREATE TABLE `wp_options` (
 --
 
 INSERT INTO `wp_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
+<<<<<<< HEAD
 (1, 'siteurl', 'http://localhost/deepcouch', 'yes'),
 (2, 'home', 'http://localhost/deepcouch', 'yes'),
+=======
+(1, 'siteurl', 'http://localhost/_school/semestre_1/wordpress/deepcouch', 'yes'),
+(2, 'home', 'http://localhost/_school/semestre_1/wordpress/deepcouch', 'yes'),
+>>>>>>> homePage
 (3, 'blogname', 'Deepcouch', 'yes'),
 (4, 'blogdescription', 'Un site utilisant WordPress', 'yes'),
 (5, 'users_can_register', '0', 'yes'),
@@ -482,9 +543,15 @@ CREATE TABLE `wp_posts` (
 --
 
 INSERT INTO `wp_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
+<<<<<<< HEAD
 (1, 1, '2017-02-14 15:31:08', '2017-02-14 14:31:08', 'Bienvenue dans WordPress. Ceci est votre premier article. Modifiez-le ou supprimez-le, puis lancez-vous&nbsp;!', 'Bonjour tout le monde&nbsp;!', '', 'publish', 'open', 'open', '', 'bonjour-tout-le-monde', '', '', '2017-02-14 15:31:08', '2017-02-14 14:31:08', '', 0, 'http://localhost/deepcouch/?p=1', 0, 'post', '', 1),
 (2, 1, '2017-02-14 15:31:08', '2017-02-14 14:31:08', 'Voici un exemple de page. Elle est différente d’un article de blog, en cela qu’elle restera à la même place, et s’affichera dans le menu de navigation de votre site (en fonction de votre thème). La plupart des gens commencent par écrire une page « À Propos » qui les présente aux visiteurs potentiels du site. Vous pourriez y écrire quelque chose de ce tenant :\n\n<blockquote>Bonjour ! Je suis un mécanicien qui aspire à devenir un acteur, et voici mon blog. J’habite à Bordeaux, j’ai un super chien baptisé Russell, et j’aime la vodka-ananas (ainsi que regarder la pluie tomber).</blockquote>\n\n...ou bien quelque chose comme ça :\n\n<blockquote>La société 123 Machin Truc a été créée en 1971, et n’a cessé de proposer au public des machins-trucs de qualité depuis lors. Située à Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson, 123 Machin Truc emploie 2 000 personnes, et fabrique toutes sortes de bidules super pour la communauté bouzemontoise.</blockquote>\n\nÉtant donné que vous êtes un nouvel utilisateur de WordPress, vous devriez vous rendre sur votre <a href="http://localhost/deepcouch/wp-admin/">Tableau de bord</a> pour effacer la présente page, et créer de nouvelles pages avec votre propre contenu. Amusez-vous bien !', 'Page d&rsquo;exemple', '', 'publish', 'closed', 'open', '', 'page-d-exemple', '', '', '2017-02-14 15:31:08', '2017-02-14 14:31:08', '', 0, 'http://localhost/deepcouch/?page_id=2', 0, 'page', '', 0),
 (3, 1, '2017-02-14 15:31:30', '0000-00-00 00:00:00', '', 'Brouillon auto', '', 'auto-draft', 'open', 'open', '', '', '', '', '2017-02-14 15:31:30', '0000-00-00 00:00:00', '', 0, 'http://localhost/deepcouch/?p=3', 0, 'post', '', 0);
+=======
+(1, 1, '2017-02-14 15:31:08', '2017-02-14 14:31:08', 'Bienvenue dans WordPress. Ceci est votre premier article. Modifiez-le ou supprimez-le, puis lancez-vous&nbsp;!', 'Bonjour tout le monde&nbsp;!', '', 'publish', 'open', 'open', '', 'bonjour-tout-le-monde', '', '', '2017-02-14 15:31:08', '2017-02-14 14:31:08', '', 0, 'http://localhost/_school/semestre_1/wordpress/deepcouch/?p=1', 0, 'post', '', 1),
+(2, 1, '2017-02-14 15:31:08', '2017-02-14 14:31:08', 'Voici un exemple de page. Elle est différente d’un article de blog, en cela qu’elle restera à la même place, et s’affichera dans le menu de navigation de votre site (en fonction de votre thème). La plupart des gens commencent par écrire une page « À Propos » qui les présente aux visiteurs potentiels du site. Vous pourriez y écrire quelque chose de ce tenant :\n\n<blockquote>Bonjour ! Je suis un mécanicien qui aspire à devenir un acteur, et voici mon blog. J’habite à Bordeaux, j’ai un super chien baptisé Russell, et j’aime la vodka-ananas (ainsi que regarder la pluie tomber).</blockquote>\n\n...ou bien quelque chose comme ça :\n\n<blockquote>La société 123 Machin Truc a été créée en 1971, et n’a cessé de proposer au public des machins-trucs de qualité depuis lors. Située à Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson, 123 Machin Truc emploie 2 000 personnes, et fabrique toutes sortes de bidules super pour la communauté bouzemontoise.</blockquote>\n\nÉtant donné que vous êtes un nouvel utilisateur de WordPress, vous devriez vous rendre sur votre <a href="http://localhost/_school/semestre_1/wordpress/deepcouch/wp-admin/">Tableau de bord</a> pour effacer la présente page, et créer de nouvelles pages avec votre propre contenu. Amusez-vous bien !', 'Page d&rsquo;exemple', '', 'publish', 'closed', 'open', '', 'page-d-exemple', '', '', '2017-02-14 15:31:08', '2017-02-14 14:31:08', '', 0, 'http://localhost/_school/semestre_1/wordpress/deepcouch/?page_id=2', 0, 'page', '', 0),
+(3, 1, '2017-02-14 15:31:30', '0000-00-00 00:00:00', '', 'Brouillon auto', '', 'auto-draft', 'open', 'open', '', '', '', '', '2017-02-14 15:31:30', '0000-00-00 00:00:00', '', 0, 'http://localhost/_school/semestre_1/wordpress/deepcouch/?p=3', 0, 'post', '', 0);
+>>>>>>> homePage
 
 -- --------------------------------------------------------
 
