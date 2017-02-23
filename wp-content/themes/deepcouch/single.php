@@ -1,7 +1,9 @@
+<?php require 'header.php'; ?>
+
 <main role="main">
     <div class="parallax-container">
         <div class="parallax">
-            <img src="media/img/parallax.jpg" alt="Responsive image">
+            <img src="statics/img/parallax.jpg" alt="Responsive image">
         </div>
     </div>
     <section class="section-white row">
@@ -11,8 +13,7 @@
                 <ul class="tabs">
                     <li class="tab col s2"><a href="#test1"><i class="material-icons">home</i></a></li>
                     <li class="tab col s2"><a href="#test2"><i class="material-icons">play_arrow</i></a></li>
-                    <li class="tab col s2"><a href="#test3"><i class="material-icons">star</i></a></li>
-                    <li class="tab col s2"><a href="#test4"><i class="material-icons">multiline_chart</i></a></li>
+                    <li class="tab col s2" style="display: none;"><a href="#test4"><i class="material-icons">multiline_chart</i></a></li>
                     <li class="tab col s2"><a href="#test5"><i class="material-icons">photo_camera</i></a></li>
                 </ul>
             </div>
