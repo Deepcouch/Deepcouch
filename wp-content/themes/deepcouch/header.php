@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Deepcouch</title>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="statics/css/materialize.min.css">
-    <link rel="stylesheet" href="statics/css/style.css">
+    <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory').'/statics/css/materialize.min.css';?>">
+    <link rel="stylesheet" href="<?php echo bloginfo('stylesheet_directory').'/statics/css/style.css'; ?>">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="statics/js/materialize.min.js" charset="utf-8"></script>
-    <script src="statics/js/script.js" charset="utf-8"></script>
+    <script src="<?php echo bloginfo('stylesheet_directory').'/statics/js/materialize.min.js'; ?>" charset="utf-8"></script>
+    <script src="<?php echo bloginfo('stylesheet_directory').'/statics/js/script.js';?>" charset="utf-8"></script>
 </head>
 <body class="grey lighten-4">
     <header class="navbar-fixed">
         <nav class="nav-wrapper">
-            <a href="#" class="brand-logo"><img src="statics/img/couch.svg" alt=""></a>
+            <a href="#" class="brand-logo"><img src="<?php echo bloginfo('stylesheet_directory').'/statics/img/couch.svg';?>" alt=""></a>
             <ul class="right hide-on-med-and-down orange-texte">
                 <li><a href="films.html">Films</a></li>
                 <li><a href="series.html">Séries</a></li>

@@ -1,4 +1,23 @@
 <?php include 'header.php'; ?>
+
+<?php
+
+
+if (have_posts()) {
+    while (have_posts()) {
+        var_dump(the_post());
+    }
+}
+
+
+exit();
+?>
+
+
+
+
+
+
 <section class="slider">
     <ul class="slides">
         <li>
