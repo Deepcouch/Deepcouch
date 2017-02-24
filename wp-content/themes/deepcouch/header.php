@@ -18,18 +18,18 @@
         <nav class="nav-wrapper">
             <a href="<?php bloginfo('url'); ?>" class="brand-logo"><img src="<?php echo bloginfo('stylesheet_directory').'/statics/img/couch.svg';?>" alt=""></a>
             <ul class="right hide-on-med-and-down orange-texte">
-                <li><a href="films.html">Films</a></li>
-                <li><a href="series.html">Séries</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="acteur.html">Acteurs</a></li>
+                <li><a href="<?php echo bloginfo('url').'/category/films/'; ?>">Films</a></li>
+                <li><a href="<?php echo bloginfo('url').'/category/series/'; ?>">Séries</a></li>
+                <li><a href="<?php echo bloginfo('url').'/category/news/'; ?>">News</a></li>
+                <li><a href="<?php echo bloginfo('url').'/category/acteurs/'; ?>">Acteurs</a></li>
                 <li><a class="modal-trigger waves-effect waves-light" href="#search"><i class="material-icons">search</i></a></li>
                 <li><a class="modal-trigger waves-effect waves-light" href="#signin"><i class="material-icons">person</i></a></li>
             </ul>
             <ul id="nav-mobile" class="side-nav">
-                <li><a href="films.html"><i class="material-icons">movie</i>Films</a></li>
-                <li><a href="series.html">Séries</a></li>
-                <li><a href="news.html"><i class="material-icons">news</i>News</a></li>
-                <li><a href="acteur.html"><i class="material-icons">face</i>Acteurs</a></li>
+                <li><a href="<?php echo bloginfo('url').'/category/films/'; ?>"><i class="material-icons">movie</i>Films</a></li>
+                <li><a href="<?php echo bloginfo('url').'/category/series/'; ?>">Séries</a></li>
+                <li><a href="<?php echo bloginfo('url').'/category/news/'; ?>"><i class="material-icons">news</i>News</a></li>
+                <li><a href="<?php echo bloginfo('url').'/category/acteurs/'; ?>"><i class="material-icons">face</i>Acteurs</a></li>
                 <li class="divider"></li>
                 <li><a class="modal-trigger waves-effect waves-light" href="#search"><i class="material-icons">search</i></a></li>
                 <li><a class="modal-trigger waves-effect waves-light" href="#signin"><i class="material-icons">person</i></a></li>
