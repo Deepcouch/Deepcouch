@@ -37,7 +37,6 @@
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </nav>
     </header>
-    <?php var_dump(get_search_query()); echo home_url('/');?>
     <div id="search" class="modal modal-fixed-footer">
         <div class="modal-content">
             <h4>Rechercher</h4>

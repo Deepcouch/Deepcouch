@@ -1,3 +1,14 @@
+<?php
+global $post;
+$categories = get_the_category($post->ID);
+foreach ($categories as $category) {
+    if($category->slug == "fiches"){
+        include "page-acteurs.php";
+        die();
+    }
+}
+?>
+
 <?php get_header();
 while ( have_posts() ) : the_post(); ?>
 <br>

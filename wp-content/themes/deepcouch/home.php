@@ -34,6 +34,7 @@
 endif; ?>
 <section class="row">
     <article class="col l12">
+        <?php query_posts('posts_per_page=6&category__in=6,2');?>
 <?php if (have_posts()) : ?>
     <div class="col s12 m6 l6">
         <div class="card">
@@ -42,16 +43,18 @@ endif; ?>
             </div>
             <div class="card-content">
                 <div class="row">
-                    <?php query_posts('posts_per_page=6');
+                    <?php
                     while (have_posts()) : the_post();
                         if (in_category('films')) { ?>
                         <div class="col s12 m6 l4">
+                            <a href="<?php the_permalink(); ?>">
                             <div class="card">
                                 <div class="card-image">
                                     <?php the_post_thumbnail([150, 150]); ?>
                                     <span class="card-title"><?php the_title(); ?></span>
                                 </div>
                             </div>
+                        </a>
                         </div>
                     <?php } ?>
                 <?php endwhile; ?>
@@ -62,6 +65,7 @@ endif; ?>
 <?php else:
     echo _e('Sorry, no posts matched your criteria.');
 endif;
+query_posts('posts_per_page=6&category__in=6,3');;
 if (have_posts()) : ?>
     <div class="col s12 m6 l6">
         <div class="card">
@@ -73,14 +77,16 @@ if (have_posts()) : ?>
                     <?php while (have_posts()) : the_post();
                         if (in_category('series')) { ?>
                             <div class="col s12 m6 l4">
+                                <a href="<?php the_permalink(); ?>" >
                                 <div class="card">
                                     <div class="card-image">
                                         <?php the_post_thumbnail([150, 150]); ?>
                                         <span class="card-title"><?php the_title(); ?></span>
                                     </div>
                                 </div>
+                                </a>
                             </div>
-                        <?php $i++;
+                        <?php
                         } ?>
                 <?php endwhile; ?>
                 </div>
