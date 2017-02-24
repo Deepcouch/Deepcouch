@@ -22,7 +22,7 @@
 define('DB_NAME', 'deepcouch');
 
 /** Utilisateur de la base de données MySQL. */
-define('DB_USER', '');
+define('DB_USER', 'root');
 
 /** Mot de passe de la base de données MySQL. */
 define('DB_PASSWORD', '');
