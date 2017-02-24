@@ -37,17 +37,18 @@
             <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
         </nav>
     </header>
+    <?php var_dump(get_search_query()); echo home_url('/');?>
     <div id="search" class="modal modal-fixed-footer">
         <div class="modal-content">
             <h4>Rechercher</h4>
-            <form action="" method="post">
+            <form action="#" method="post">
                 <div class="input-field s12">
-                    <input type="text" name="search">
+                    <?php get_search_form(); ?>
                 </div>
             </form>
         </div>
         <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Rechercher</a>
+            <!--<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Rechercher</a>-->
         </div>
     </div>
     <div id="signin" class="modal modal-fixed-footer">
