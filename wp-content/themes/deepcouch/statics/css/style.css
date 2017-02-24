@@ -28,3 +28,14 @@ input.button {
     color: #fff;
     background-color: #ff9800 !important;
 }
+.error-404 h1 {
+    margin: 0;
+    color: #fff;
+}
+div.error-404 {
+    margin:0;
+    padding:0;
+    background: url(../img/404.jpg) no-repeat center center fixed;
+    background-size: cover;
+    padding:20%;
+}
